@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÊM LỚP MỚI "
+        android:textColor="#E91E63"
+        android:textSize="60px"/>
+    <EditText
+        android:id="@+id/edtClassId"
+        android:hint="Nhập mã lớp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtClassName"
+        android:hint="Nhập Tên Lớp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Xóa Trắng" />
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            />
+    </LinearLayout>
+</LinearLayout>
