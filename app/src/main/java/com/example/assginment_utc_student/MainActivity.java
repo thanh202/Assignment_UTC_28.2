@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         // ánh xạ từ id layout main
         Button btnAddClass = findViewById(R.id.btnAddClass);
         Button btnClassManager = findViewById(R.id.btnClassManager);
-        Button btnStudent = findViewById(R.id.btnStudentManager);
+        Button btnStudentManager = findViewById(R.id.btnStudentManager);
 
         //call DAO
         classesDAO = new ClassesDAO(MainActivity.this);
@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ClassesManagerActivity.class));
+            }
+        });
+        btnStudentManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, StudentManagerActivity.class));
             }
         });
     }

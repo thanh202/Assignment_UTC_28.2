@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Quan ly Sinh Vien"
+        android:text="Quản Lý Sinh Viên"
         android:textSize="100px"
         android:textColor="#E91E63"
         />

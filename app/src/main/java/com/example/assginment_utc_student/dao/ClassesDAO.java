@@ -39,8 +39,12 @@ public class ClassesDAO {
 
             contentValues.put("id", classes.getId());
             contentValues.put("name",classes.getName());
-            database.insert("CLASSES", null, contentValues);
-            return true;
+           long value = database.insert("CLASSES", null, contentValues);
+           if (value == -1){
+               return false;
+           }else {
+               return true;
+           }
         }catch (Exception ex){
             return false;
         }
