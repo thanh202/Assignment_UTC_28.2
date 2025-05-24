@@ -1,13 +1,14 @@
 package com.example.assginment_utc_student.model;
 
-public class Classes {
+public class Student {
     private String id;
     private String name;
+    private String classId;
 
-
-    public Classes(String id, String name) {
+    public Student(String id, String name, String classId) {
         this.id = id;
         this.name = name;
+        this.classId = classId;
     }
 
     public String getId() {
@@ -24,5 +25,13 @@ public class Classes {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getClassId() {
+        return classId;
+    }
+
+    public void setClassId(String classId) {
+        this.classId = classId;
     }
 }
